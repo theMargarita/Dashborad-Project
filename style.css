@@ -1,0 +1,133 @@
+/* fonten */
+* {
+  margin: 0 auto;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  /* box-sizing: border-box; */
+}
+
+.material-icons-outlined {
+  vertical-align: text-bottom;
+  line-height: 1px;
+}
+/* -------TIME AND DATE-------- */
+.header {
+  margin-top: 10px;
+  /* padding: 10px; */
+}
+.date-time {
+  display: block;
+  padding: 0%;
+  margin: center;
+  max-width: 200px;
+  max-block-size: 200px;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(10, 7, 14);
+  background-color: rgb(116, 221, 221);
+}
+
+.main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 30px;
+  margin-top: 100px;
+  gap: 20px;
+  text-align: center;
+}
+
+.inner-cards {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: flex-start; /* Align content to the left */
+  justify-content: flex-start; /* Make sure content starts from the top */
+  height: 100%; /* Ensure the container doesn't shrink */
+  border-style: solid;
+  padding: 20px;
+  height: 380px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-sizing: border-box 10px;
+  /* background-color: rgb(var(--vs-primary)); */
+  background-color: rgb(250, 226, 174);
+}
+ul.link-list {
+  scroll-margin-top: 50px;
+}
+
+li {
+  list-style: none;
+  /* justify-content: center; */
+  align-self: center;
+  gap: 12px;
+  max-width: 400px;
+  margin: 20px auto;
+  background: rgb(171, 177, 180);
+  padding: 5px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.add-link {
+  position: absolute;
+  margin-top: 370px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 5px 9px 12px rgba(0, 0, 0, 0.1);
+}
+
+.link-container {
+  align-items: center;
+  flex-grow: 1; /* Makes sure the list area expands downward */
+  overflow-y: auto; /* Adds scroll if too many links */
+  max-height: 200px; /* Prevents it from growing too much */
+  margin-bottom: -320px; /* Add space so links don’t touch the heading */
+  overflow-y: auto; /* Enable scrolling if the list gets too long */
+  max-height: 300px; /* Prevents it from growing infinitely */
+}
+.text {
+  position: relative; /*keep it in place*/
+  top: 0%;
+  margin-bottom: 10px; /*adds spacing below*/
+}
+
+h3.text {
+  margin-top: -350px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+/* #note-box{
+  justify-items: end;
+  padding-bottom: -129px;  /*
+   boxen i sig */
+/* border-style: solid; 
+} */
+textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 10px;
+  font-size: 14px;
+  margin-inline: 100px;
+  margin-top: 10px;
+}
+
+footer {
+  margin-top: 10%;
+}

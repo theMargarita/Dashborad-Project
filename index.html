@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- Fonten -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iansui&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <!-- HEADER for time and date -->
+      <header class="header">
+        <!-- TIME AND DATE -->
+        <div class="date-time">
+          <h4 id="current-time"></h4>
+          <h4 id="current-date"></h4>
+        </div>
+        <!-- DASHBOARD NAME -->
+        <div class="dashboard-name">
+          <h1>Some name</h1>
+        </div>
+      </header>
+      <!-- end header -->
+      <div class="main-cards">
+        <!-- Quick links (SNABBLÄNKAR) -->
+        <div class="card">
+          <div class="inner-cards">
+            <h3 class="text">Links</h3>
+            <input type="text" placeholder="Add link" class="input-link" />
+            <button class="add-link">Add link</button>
+            <div class="link-container">
+              <ul class="link-list">
+                <li><a href="https://google.com">Google</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- WEATHER -->
+        <div class="card">
+          <div class="inner-cards">
+            <h3 class="text">Weather</h3>
+          </div>
+        </div>
+        <!-- NOT DECIDED YET -->
+        <div class="card">
+          <div class="inner-cards">
+            <h3 class="text">Random</h3>
+          </div>
+        </div>
+        <!-- NOTES -->
+        <div class="card">
+          <div class="inner-cards">
+            <h3 class="text">Notes</h3>
+            <!-- <div class="notes-container"> -->
+            <textarea
+              name="notes"
+              id="note-box"
+              placeholder="Type here"
+            ></textarea>
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="change-background">
+        <button>Change background</button>
+        <div class="imgs"><ul></ul></div>
+      </div>
+      <!-- MAIN -->
+      <main class="main-container"></main>
+    </div>
+    <!-- javascript part -->
+    <script src="script.js"></script>
+    <footer>
+      <p>&copy;By Margarita</p>
+    </footer>
+  </body>
+</html>
