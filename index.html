@@ -13,7 +13,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/links.css" />
+    <link rel="stylesheet" href="/css/weather.css">
+    <link rel="stylesheet" href="/css/notes_and_time.css" />
   </head>
 
   <body>
@@ -33,53 +36,58 @@
       <!-- end header -->
       <div class="main-cards">
         <!-- Quick links (SNABBLÄNKAR) -->
-        <div class="card">
-          <div class="inner-cards">
-            <h3 class="text">Links</h3>
-            <input type="text" placeholder="Add link" class="input-link" />
-            <button class="add-link">Add link</button>
-            <div class="link-container">
-              <ul class="link-list">
-                <li><a href="https://google.com">Google</a></li>
-              </ul>
-            </div>
+        <div class="inner-cards">
+          <h3 class="text">Links</h3>
+          <input type="text" placeholder="Add link" class="input-link" />
+          <button class="add-link">Add link</button>
+          <div class="link-container">
+            <ul class="link-list">
+              <li><a href="https://google.com">Google </a></li>
+            </ul>
           </div>
         </div>
+
         <!-- WEATHER -->
-        <div class="card">
-          <div class="inner-cards">
-            <h3 class="text">Weather</h3>
+
+        <div class="inner-cards">
+          <div class="weather-result">
+            <p id="error-message"></p>
+            <h2 id="city-name"></h2>
+            <ul class="weather-list">
+              <p id="temp"></p>
+              <p id="description"></p>
+              <p id="wind"></p>
+              <p id="humidity"></p>
+            </ul>
           </div>
         </div>
+
         <!-- NOT DECIDED YET -->
-        <div class="card">
-          <div class="inner-cards">
-            <h3 class="text">Random</h3>
-          </div>
+        <div class="inner-cards">
+          <h3 class="text">Random</h3>
         </div>
+
         <!-- NOTES -->
-        <div class="card">
-          <div class="inner-cards">
-            <h3 class="text">Notes</h3>
-            <!-- <div class="notes-container"> -->
-            <textarea
-              name="notes"
-              id="note-box"
-              placeholder="Type here"
-            ></textarea>
-            <!-- </div> -->
-          </div>
+        <div class="inner-cards">
+          <h3 class="text">Notes</h3>
+          <!-- <div class="notes-container"> -->
+          <textarea
+            name="notes"
+            id="note-box"
+            placeholder="Type here"
+          ></textarea>
+          <!-- </div> -->
         </div>
       </div>
-      <div class="change-background">
-        <button>Change background</button>
-        <div class="imgs"><ul></ul></div>
-      </div>
-      <!-- MAIN -->
-      <main class="main-container"></main>
     </div>
+    <!-- MAIN -->
+    <main class="main-container"></main>
+    <button class="change-btn">Change background</button>
     <!-- javascript part -->
-    <script src="script.js"></script>
+    <script src="/javascript/script.js"></script>
+    <script src="/javascript/weather.js"></script>
+    <script src="/javascript/notes_and_time.js"></script>
+    <script src="/javascript/backgroundChange.js"></script>
     <footer>
       <p>&copy;By Margarita</p>
     </footer>

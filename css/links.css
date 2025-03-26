@@ -1,0 +1,50 @@
+ul.link-list {
+  scroll-margin-top: 50px;
+}
+
+li {
+  list-style: none;
+  /* justify-content: center; */
+  /* align-self: center; */
+  max-width: 400px;
+  margin: 20px auto;
+  background: rgb(171, 177, 180);
+  padding: 5px;
+  border-radius: 10px;
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+.add-link {
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(60, 158, 182);
+  cursor: pointer;
+  margin: 10px;
+  bottom: 11px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-right: 6px;
+  padding-left: 6px;
+  max-width: fit-content;
+}
+
+.link-container {
+  align-items: center;
+  flex-grow: 1; /* Makes sure the list area expands downward */
+  overflow-y: auto; /* Adds scroll if too many links */
+  max-height: 200px; /* Prevents it from growing too much */
+  margin-bottom: -320px; /* Add space so links don’t touch the heading */
+  overflow-y: auto; /* Enable scrolling if the list gets too long */
+  max-height: 300px; /* Prevents it from growing infinitely */
+}

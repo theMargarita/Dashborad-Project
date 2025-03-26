@@ -1,0 +1,18 @@
+.weather-list {
+    display: flexbox;
+    justify-content: space-between;
+    list-style: none;
+    /* justify-content: center; */
+    /* align-self: center; */
+    max-width: 400px;
+    margin: 20px auto;
+    background: rgb(171, 177, 180);
+    padding: 5px;
+    border-radius: 10px;
+  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+p{
+    justify-content: space-between;
+}
+
