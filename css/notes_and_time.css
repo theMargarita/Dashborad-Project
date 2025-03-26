@@ -1,35 +1,51 @@
 .date-time {
-    display: block;
-    padding: 0%;
-    margin: center;
-    max-width: 200px;
-    max-block-size: 200px;
-    text-align: center;
-    border-radius: 10px;
-    color: rgb(10, 7, 14);
-    background-color: rgb(116, 221, 221);
-  }
+  display: block;
+  padding: 0%;
+  margin: center;
+  max-width: 200px;
+  max-block-size: 200px;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(10, 7, 14);
+  background-color: rgb(195, 238, 238);
+}
 
-  #note-box{
+#note-box {
   /* padding-bottom: 129px;   */
-   /* boxen i sig */
- border-style: solid; 
- 
-} 
+  /* boxen i sig */
+  border-style: solid;
+  /* display: flow-root; */
+}
 
 textarea {
-     width: 100%;
-    height: 100%; 
-    border: none;
-    padding: 10px;
-    font-size: 14px;
-    margin-inline: 100px;
-    margin-top: 10px;
-  }
+  /* display: block;
+  justify-content: center;
+  padding-bottom: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
+  max-width: fit-content;
+  min-height: auto; */
+height: 300px;
+width: 250px;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 10px;
+background-color: azure;
+}
 
-  
 .text {
-    position: relative; /*keep it in place*/
-    top: 0%;
-    margin-bottom: 10px; /*adds spacing below*/
-  }
+  position: relative; /*keep it in place*/
+  top: 0%;
+  margin-bottom: 10px; /*adds spacing below*/
+}
+
+.change-btn {
+  padding: 10px;
+  margin: 40% auto;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: azure;
+  cursor: pointer;
+}
