@@ -10,15 +10,22 @@ fetch(apiUrl)
     return response.json();
   })
   .then((data) => {
+    const catBox  = document.querySelector(".cat-box");
     console.log(data);
 
+    data.forEach(function (cat) {
+      let image = document.createElement("img");
+      image.src = cat.url;
+      image.style.width = "200px";
+      image.style.borderRadius = "10px";
+
+      let description = document.createElement("p");
+      description.textContent = cat.breeds[0]?.description || "No description available.";
+      description.id = "cat-description"; // ser till att den matchar html
+
+      catBox.classList.add("cat");
+      catBox.appendChild(image);
+      catBox.appendChild(description);
+    });
   })
   .catch((error) => console.error(`Error fetching image: ${error}`));
-
-
-  function showCat(){
-    document.body.style.backgroundImage = `url(${data.url})`;
-    document.getElementById(
-      "description"
-    ).textContent = `Description: ${data.url}`;
-  }

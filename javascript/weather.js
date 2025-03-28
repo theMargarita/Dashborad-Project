@@ -1,6 +1,6 @@
 const apiKEY = `1c8f15eb3265237e7406e9cf21f69d83`;
 
-//gets the users location through accepting on the page
+//gets the users location
 navigator.geolocation.getCurrentPosition(
   (position) => {
     const { latitude, longitude } = position.coords;
@@ -31,13 +31,13 @@ function getWeather(lat, lon) {
     });
 }
 
-// to display the data from the api to give the specific weather 
+// to display the data from the api to give the specific weather
 function displayWeather(data) {
   document.getElementById("error-message").textContent = "";
   document.getElementById("city-name").textContent = `Weather in: ${data.name}`;
   document.getElementById(
     "temp"
-  ).textContent = `Tempeture: ${data.main.temp} C°`;
+  ).textContent = `Tempeture: ${Math.floor(data.main.temp)} C°`;
 
   document.getElementById(
     "description"
@@ -45,10 +45,20 @@ function displayWeather(data) {
   document.getElementById("wind").textContent = `Wind: ${data.wind.speed} m/s`;
   document.getElementById(
     "humidity"
-  ).textContent = `Humidity: ${data.main.humidity} `;
+  ).textContent = `Humidity: ${data.main.humidity}% `
+  document.getElementById("clouds").textContent = `Clouds: ${data.clouds.all}%`;
+
+  const icons = data.weather[0].icon;
+  const iconURL = `https://openweathermap.org/img/wn/${icons}@2x.png`;
+
+  const weatherIcon = document.getElementById("weather-icon");
+    weatherIcon.src = iconURL;
+    weatherIcon.alt = data.weather[0].description;
+    weatherIcon.style.display = "block"; // makes it visible
+
 }
 
-// displays errors if they occur 
+// displays errors if they occur
 function displayError(message) {
   document.getElementById("error-message").textContent = message;
   document.getElementById("city-name").textContent = "";

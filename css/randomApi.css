@@ -1,0 +1,39 @@
+.cat-card{
+    width: 100%; /* Ensures it stretches within the grid */
+    min-height: 200px; /* Adjust height based on your content */
+    padding: 15px;
+    /* background-color: #c79494; */
+    border-radius: 10px;
+   overflow: hidden; 
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+    text-align: center;
+}
+
+p#cat-description{
+    word-wrap: break-word;
+    overflow-x: auto;
+    max-width: 100%; 
+    padding: 5px;
+    font-size: 19px;
+    color: black;
+}
+
+.cat-box{
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /*overflow-wrap: break-word;
+     */
+
+}
+
+#cat-description{
+    /* color: #333; */
+    /* text-align: center; */
+    padding: 10px;
+    max-width: 90%; 
+    overflow-wrap: break-word;
+}

@@ -24,3 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
 notes.addEventListener("input", function () {
   localStorage.setItem("userNote", notes.value);
 });
+
+// ---------------------------------------------------
+// DASHBOARD NAME
+const dashboardName = document.querySelector(".dashboard-name");
+
+  dashboardName.textContent = localStorage.getItem("userName") || "";
+
+dashboardName.addEventListener("keypress", function () {
+  localStorage.setItem("userName", dashboardName.textContent);
+});

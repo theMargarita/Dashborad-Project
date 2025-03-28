@@ -21,7 +21,7 @@ li {
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #0a12b4;
   text-decoration: inherit;
 }
 
@@ -39,7 +39,7 @@ a:hover {
 .add-link {
   border-radius: 5px;
   border: none;
-  background-color: rgb(60, 158, 182);
+  background-color: rgb(45, 174, 206);
   cursor: pointer;
   margin: 10px;
   bottom: 11px;
@@ -52,12 +52,10 @@ a:hover {
 
 .link-container {
   align-items: center;
-  flex-grow: 1; /* Makes sure the list area expands downward */
   overflow-y: auto; /* Adds scroll if too many links */
-  max-height: 200px; /* Prevents it from growing too much */
-  margin-bottom: -320px; /* Add space so links don’t touch the heading */
   overflow-y: auto; /* Enable scrolling if the list gets too long */
   max-height: 300px; /* Prevents it from growing infinitely */
+  justify-content: space-between;
 }
 
 button{

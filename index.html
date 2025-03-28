@@ -15,8 +15,9 @@
     />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/links.css" />
-    <link rel="stylesheet" href="/css/weather.css">
+    <link rel="stylesheet" href="/css/weather.css" />
     <link rel="stylesheet" href="/css/notes_and_time.css" />
+    <link rel="stylesheet" href="css/randomApi.css">
   </head>
 
   <body>
@@ -24,23 +25,28 @@
       <!-- HEADER for time and date -->
       <header class="header">
         <!-- TIME AND DATE -->
+
         <div class="date-time">
           <h4 id="current-time"></h4>
           <h4 id="current-date"></h4>
         </div>
+
         <!-- DASHBOARD NAME -->
-        <div class="dashboard-name">
-          <h1>Some name</h1>
+
+        <div class="dashboard-container">
+          <h2>
+            <span class="dashboard-name" contenteditable="true">Your name</span>
+          </h2>
         </div>
       </header>
       <!-- end header -->
       <div class="main-cards">
         <!-- Quick links (SNABBLÄNKAR) -->
         <div class="inner-cards">
+          <div class="link-container">
           <h3 class="text">Links</h3>
           <input type="text" placeholder="Add link" class="input-link" />
           <button class="add-link">Add link</button>
-          <div class="link-container">
             <ul class="link-list">
               <li><a href="https://google.com">Google </a></li>
             </ul>
@@ -58,27 +64,28 @@
               <p id="description"></p>
               <p id="wind"></p>
               <p id="humidity"></p>
+              <p id="clouds"></p>
+              <img id="weather-icon" src="" alt="Weather Icon" />
             </ul>
           </div>
         </div>
 
         <!-- NOT DECIDED YET -->
         <div class="inner-cards">
-          <h3 class="text">Random</h3>
-          <div class="cat-box">
-            <h4><p id="description"></p></h4>
+          <h3 class="text">Cats</h3>
+          <div class="cat-card">
+            <div class="cat-box">
+              <p id="cat-description"><br></p>
+            </div>
           </div>
         </div>
 
         <!-- NOTES -->
         <div class="inner-cards">
           <h3 class="text">Notes</h3>
-          <!-- <div class="notes-container"> -->
-          <textarea
-            id="note-box"
-            placeholder="Type here"
-          ></textarea>
-          <!-- </div> -->
+          <div class="notes-container">
+            <textarea id="note-box" placeholder="Type here"></textarea>
+          </div>
         </div>
       </div>
     </div>

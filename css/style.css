@@ -32,9 +32,8 @@ white-space: nowrap;
 }
 
 .inner-cards {
-  display: flex;
+  display: grid;
   flex-direction: column;
-  height: 100%;
   padding: 20px;
   height: 380px;
   width: 250px;
@@ -49,7 +48,7 @@ white-space: nowrap;
 }
 
 h3.text {
-  margin-top: -350px;
+  margin: 10px auto;
   display: flex;
   align-content: center;
   justify-content: center;
