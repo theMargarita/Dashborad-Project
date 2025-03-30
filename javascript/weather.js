@@ -48,7 +48,7 @@ function displayWeather(data) {
   ).textContent = `Humidity: ${data.main.humidity}% `
   document.getElementById("clouds").textContent = `Clouds: ${data.clouds.all}%`;
 
-  const icons = data.weather[0].icon;
+  const icons = data.weather[0].icon; 
   const iconURL = `https://openweathermap.org/img/wn/${icons}@2x.png`;
 
   const weatherIcon = document.getElementById("weather-icon");

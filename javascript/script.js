@@ -1,5 +1,5 @@
 
-//create a link list item with favicon
+// DOM ensures that the script runns only after the html docuemtn is fully loaded 
 document.addEventListener("DOMContentLoaded", function () {
   const addLinkBTN = document.querySelector(".add-link");
   addLinkBTN.addEventListener("click", addLink);
@@ -20,14 +20,14 @@ function createLinkElement(linkValue) {
     return null;
   }
 
-  // creates favicon image element
+  // favicon image
   const favicon = document.createElement("img");
   favicon.style.width = "16px";
   favicon.style.height = "16px";
   favicon.style.marginRight = "8px";
   favicon.src = `https://www.google.com/s2/favicons?domain=${domain}&sz=16`;
 
-  // creates link element
+  // link element
   const linkElement = document.createElement("a"); //creates hyperlink
   linkElement.href = linkValue;
   linkElement.textContent = domain; //show domain instead of full url
@@ -43,7 +43,7 @@ function createLinkElement(linkValue) {
     removeFromStorage(linkValue);
   };
 
-  // append favicon and link to the list item
+  // append (add) favicon and link to the list item
   newListItem.appendChild(favicon);
   newListItem.appendChild(linkElement);
   newListItem.appendChild(deleteBTN);
@@ -51,7 +51,7 @@ function createLinkElement(linkValue) {
   return newListItem; // return the complete list item
 }
 
-//add new link and save it with localstorage
+// localstorage
 function addLink() {
   const linkValue = linkInput.value.trim(); //remove uneccessary spaces
 
@@ -76,17 +76,18 @@ function addLink() {
   }
 }
 
-//validate URL
+//checks if it is a proper url
 function isValidURL(str) {
   try {
     new URL(str);
     return true;
+
   } catch (_) {
     return false;
   }
 }
 
-//load saved links from localStorage
+//get item 
 function loadLinks() {
   const links = JSON.parse(localStorage.getItem("links")) || [];
 
@@ -98,6 +99,7 @@ function loadLinks() {
   });
 }
 
+//set item 
 function removeFromStorage(linkValue) {
   // localstorage --> gets the data from storage
   // getItem --> retirves links from storage

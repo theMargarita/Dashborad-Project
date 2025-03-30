@@ -8,26 +8,15 @@
   border-radius: 10px;
   color: rgb(10, 7, 14);
   background-color: rgb(195, 238, 238);
-}
 
-#note-box {
-  /* padding-bottom: 129px;   */
-  /* boxen i sig */
-  border-style: solid;
-  /* display: flow-root; */
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.1);
+  
 }
 
 textarea {
-  /* display: block;
-  justify-content: center;
-  padding-bottom: 90px;
-  padding-left: 50px;
-  padding-right: 50px;
-  max-width: fit-content;
-  min-height: auto; */
   align-items: flex-end;
 height: 300px;
-width: 250px;
+width: 240px;
   box-sizing: border-box;
   padding: 10px;
   border-radius: 10px;
@@ -35,9 +24,9 @@ background-color: azure;
 }
 
 .text {
-  position: relative; /*keep it in place*/
+  position: relative; 
   top: 0%;
-  margin-bottom: 10px; /*adds spacing below*/
+  margin-bottom: 10px; 
 }
 
 .change-btn {
@@ -47,6 +36,22 @@ background-color: azure;
   border: none;
   font-size: 15px;
   font-weight: bold;
-  background-color: azure;
+  background-color: rgb(195, 238, 238);
   cursor: pointer;
 }
+
+.dashboard-container{
+  text-align: center;
+  margin: 25px auto;
+  backdrop-filter: blur(10px);
+  background: rgba(77, 83, 83, 0.432);
+
+  max-width: 500px;
+  border-radius: 10px;
+padding: 7px;
+}
+.dashboard-name{
+  text-align: center;
+  color: azure;
+}
+

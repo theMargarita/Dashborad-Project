@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/css/links.css" />
     <link rel="stylesheet" href="/css/weather.css" />
     <link rel="stylesheet" href="/css/notes_and_time.css" />
-    <link rel="stylesheet" href="css/randomApi.css">
+    <link rel="stylesheet" href="css/randomApi.css" />
   </head>
 
   <body>
@@ -44,9 +44,9 @@
         <!-- Quick links (SNABBLÄNKAR) -->
         <div class="inner-cards">
           <div class="link-container">
-          <h3 class="text">Links</h3>
-          <input type="text" placeholder="Add link" class="input-link" />
-          <button class="add-link">Add link</button>
+            <h2 class="text">Links</h2>
+            <input type="text" placeholder="Add link" class="input-link" />
+            <button class="add-link">Add link</button>
             <ul class="link-list">
               <li><a href="https://google.com">Google </a></li>
             </ul>
@@ -57,8 +57,8 @@
 
         <div class="inner-cards">
           <div class="weather-result">
-            <p id="error-message"></p>
             <h2 id="city-name"></h2>
+            <p id="error-message"></p>
             <ul class="weather-list">
               <p id="temp"></p>
               <p id="description"></p>
@@ -72,17 +72,16 @@
 
         <!-- NOT DECIDED YET -->
         <div class="inner-cards">
-          <h3 class="text">Cats</h3>
+          <h2 class="text">Cats</h2>
           <div class="cat-card">
-            <div class="cat-box">
-              <p id="cat-description"><br></p>
-            </div>
+            <div class="cat-box"></div>
+            <!-- <button class="change-cat">Change image</button> -->
           </div>
         </div>
 
         <!-- NOTES -->
         <div class="inner-cards">
-          <h3 class="text">Notes</h3>
+          <h2 class="text">Notes</h2>
           <div class="notes-container">
             <textarea id="note-box" placeholder="Type here"></textarea>
           </div>
